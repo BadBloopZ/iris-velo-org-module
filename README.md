@@ -7,13 +7,14 @@
 
 # How to run the module:
 ## Prerequisites
-1. Create API config and user in Velociraptor with Administrator and API permissions:
+1. Run Velociraptor >= **0.6.6-rc1 Linux Build All Arches #1579**. Refer to [Velociraptors Readme](https://github.com/Velocidex/velociraptor#getting-the-latest-version) to get the current executable after the fix #1579 *Fixed crash in api_client command*.
+2. Create API config and user in Velociraptor with Administrator and API permissions:
 ```
 ./velociraptor --config server.config.yaml config api_client --name iris-modules --role investigator,api api.config.yaml
 ```
-2. Mount the api.config.yaml file in DFIR-IRIS 
+3. Mount the api.config.yaml file in DFIR-IRIS 
 docker-compose for both **Worker and Web-App**
-3. Make sure that the Worker container can establish connections to Velociraptor API. Hint: Verify in the server.config.yaml that Velociraptor publishes the API to the required interface.
+4. Make sure that the Worker container can establish connections to Velociraptor API. Hint: Verify in the server.config.yaml that Velociraptor publishes the API to the required interface.
 
 ## Install release
 1. Download the release *.whl to your DFIR-IRIS server
