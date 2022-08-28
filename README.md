@@ -1,6 +1,6 @@
 # DFIR-IRIS Module 'Create Orgs in Velociraptor' `iris-velo-org-module`
 
-`iris-velo-org-module` is a IRIS processor module created with https://github.com/dfir-iris/iris-skeleton-module. It hooks on created cases and adds the client of the case as new organization in Velociraptor. Furthermore, it can grant existing users in Velociraptor access to the case. If an organization already exists, it won't get recreated. However, the users will be added nevertheless.
+`iris-velo-org-module` is a IRIS processor module created with https://github.com/dfir-iris/iris-skeleton-module. It hooks on created cases and adds the client of the case as new organization in Velociraptor, grants existing users in Velociraptor access to the case, and uploads to Velociraptor client config to IRIS' datastore. If an organization already exists, it won't get recreated and user permissions will not be changed. Nevertheless, the Velociraptor client config will be uploaded to the datastore.
 
 [Velociraptor](https://github.com/Velocidex/velociraptor) is a tool for collecting host based state information using The Velociraptor Query Language (VQL) queries.
 [DFIR-IRIS](https://github.com/dfir-iris/iris-web) is an Incident Response Investigation System to collect information about a case and act as documentation platform.

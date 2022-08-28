@@ -11,7 +11,7 @@
 module_name = "IrisVeloCreateOrg"
 module_description = "Provides an interface between IRIS and Velociraptor to create new organizations in Velociraptor"
 interface_version = 1.1
-module_version = 1.0
+module_version = 1.1
 
 pipeline_support = False
 pipeline_info = {}
